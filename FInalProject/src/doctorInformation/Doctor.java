@@ -3,8 +3,8 @@ import java.util.Date;
 
 public class Doctor{
 
-		
-	
+
+
 	private String name;
 	private String phoneNumber;
 	private int id;
@@ -12,9 +12,9 @@ public class Doctor{
 	private java.util.Date birthday;
 	private String specialty;
 	private double visitFee;
-	
+
 	public Doctor( String name,
-			 String phoneNumber,int id, String sex, java.util.Date birthday2, String specialty, double visitFee) {
+			String phoneNumber,int id, String sex, java.util.Date birthday2, String specialty, double visitFee) {
 		this.name=name;
 		this.phoneNumber=phoneNumber;
 		this.id = id;
@@ -22,9 +22,9 @@ public class Doctor{
 		this.birthday = birthday2; 
 		this.specialty = specialty;
 		this.visitFee = visitFee;
-		
+
 	}
-	
+
 
 	public String getName() {
 		return name;
@@ -111,18 +111,18 @@ public class Doctor{
 
 
 	public boolean equals(Doctor obj) {
-	
+
 		return this.name.equals(obj.name)
 				&&this.phoneNumber.equals(obj.phoneNumber)
 				&&this.id==obj.id
-			&&this.sex.equals(obj.sex)
-			&&this.birthday.equals(obj.birthday)
-			&&this.specialty.equals(obj.specialty)
-			&&this.visitFee==obj.visitFee;
+				&&this.sex.equals(obj.sex)
+				&&this.birthday.equals(obj.birthday)
+				&&this.specialty.equals(obj.specialty)
+				&&this.visitFee==obj.visitFee;
 	}
 
-	
 
-	
-	
+
+
+
 }
